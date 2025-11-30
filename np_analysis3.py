@@ -196,7 +196,7 @@ def compute_strain(
         normal_strains:     array of normal strains. see top of script for definition
         layer_percents:     array of height %
     """
-    atoms, _ = divider(atoms) #in case the user is an idiot
+    atoms, _ = divider(atoms) #in case
     ##get the layers
     atoms, layers = classify_into_layers(atoms, tol = LAYER_TOLERANCE)
     ##normalize layers
@@ -420,7 +420,7 @@ def write_output(
             total=len(traj),
             desc="gathering data to record"
             ):
-        ##just in case the idiot user submitted substrate-inclusive
+        ##just in case the user submitted substrate-inclusive
         atoms, mgo = divider(atoms)
 
         ##extract the interested atom indices
